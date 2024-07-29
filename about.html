@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- NavBar-->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">Nicole Huh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="backdrop">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <h4 id="aboutMeText">About Me!</h4>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <img id="profilePic" class="profile-pic" src="img/ProfilePic copy.png" alt="My Image">
+                </div>
+            </div>
+    </div>
+    <div class="container centered">
+    
+    
+       
+        <p>Hi! I was born in Huntington Beach, CA and raised in Fort Lee, NJ. 
+            I just graduated from Vanderbilt University with a Bachelors in Computer Science and Economics (May 2024).
+            I'm hoping to find work as a UI/UX developer or a full stack web developer. In the past, I have worked as a web designer and developer for
+            the Meiler Lab at Vanderbilt University. I also worked as a web developer intern at ICF International. I hope to continue contributing meaningful work and further developing my skills.
+        Some more specialized interests of mine include new web development practices and accessibility innovations.</p>
+      
+        <p>Some fun things about me!
+            I am SO obsessed with Pokemon, especially from a young age. From Pokemon GO to TCG collection, I am somewhat of a nut. Besides that, 
+            I also love crocheting in my free time and creating cute amigurumis. I also play Tetris competitively and like to sing and dance. Outside of 
+            work, you will likely catch me engaging in one of my hobbies. I'm always delighted to meet new friends and colleagues. Looking forward
+            to meeting you!
+        </p>
+        <p>To view my resume on a separate window, <a href="img/Resume.pdf" target="_blank">click here.</a></p>
+        <div class="resume-container">
+            <iframe src="img/Resume.pdf" frameborder="0"></iframe>
+        </div>
+
+    </div>
+    <footer>
+        <div class="centered">
+            <h4><a class="nav-link" href="contact.html">Contact Me!</a></h4>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const aboutMeText = document.getElementById("aboutMeText");
+            const profilePic = document.getElementById("profilePic");
+            setTimeout(() => {
+                aboutMeText.style.opacity = "1";
+                aboutMeText.style.transform = "translateX(0)";
+            }, 500); // Delay to start the animation
+
+            setTimeout(() => {
+                profilePic.style.opacity = "1";
+                profilePic.style.transform = "translateX(0)";
+            }, 500);
+        });
+    </script>
+</body>
+
+
+</html>
